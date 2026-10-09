@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | Your Name</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Playfair+Display:ital,wght@1,700&amp;family=Poppins:wght@300;400;500&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px) and (max-width: 1023px)">
+  <link rel="stylesheet" href="css/laptop.css" media="screen and (min-width: 1024px)">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrapper clearfix">
+      <a href="index.html" class="logo" aria-label="Home">YN</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="current">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Photo + introduction -->
+    <section class="about wrapper" aria-labelledby="about-title">
+  <div class="about-hub">
+    <!-- Radios must come BEFORE .poster. ab-0 = nothing open -->
+    <input type="radio" name="about-popup" id="ab-0" checked>
+    <input type="radio" name="about-popup" id="ab-1">
+    <input type="radio" name="about-popup" id="ab-2">
+    <input type="radio" name="about-popup" id="ab-3">
+    <input type="radio" name="about-popup" id="ab-4">
+    <input type="radio" name="about-popup" id="ab-5">
+    <input type="radio" name="about-popup" id="ab-6">
+
+    <div class="poster">
+      <!-- One h1; the two spans are placed above and below the photo -->
+      <h1 id="about-title"><span class="t-about">About</span> <span class="t-me">Me</span></h1>
+
+      <div class="poster-photo">
+        <img src="images/about.jpg" alt="Portrait of Isaiah">
+      </div>
+      <p class="poster-name">I'm Isaiah</p>
+
+      <!-- Handwritten notes = clickable labels -->
+      <label for="ab-1" class="note note-1"><span aria-hidden="true">🎓</span> Education</label>
+      <label for="ab-2" class="note note-2"><span aria-hidden="true">🛡️</span> Cybersecurity</label>
+      <label for="ab-3" class="note note-3"><span aria-hidden="true">🌐</span> Luv for tech</label>
+      <label for="ab-4" class="note note-4"><span aria-hidden="true">🤖</span> Family</label>
+      <label for="ab-5" class="note note-5"><span aria-hidden="true">💻</span> Gaming</label>
+      <label for="ab-6" class="note note-6"><span aria-hidden="true">🔍</span> My goals</label>
+
+      <p class="poster-cta">Let's work together,<br><a href="contact.html">send me a message!</a></p>
+
+      <!-- Popups: one per note -->
+      <article class="popup popup-1" aria-label="Education">
+        <h2>Education</h2>
+        <p>I study networking and It security at Ontario tech University. I am building my skills in Networking, web development, and IT security], and I use what I learn in labs and real projects.</p>
+        <label for="ab-0" class="popup-close">Close</label>
+      </article>
+      <article class="popup popup-2" aria-label="Cybersecurity">
+        <h2>Cybersecurity</h2>
+        <p>I first realized that hacking like in the movies can be a real job through modding in games and watching hackers in films. That moment turned a hobby into something I could actually build a career around.</p>
+        <label for="ab-0" class="popup-close">Close</label>
+      </article>
+      <article class="popup popup-3" aria-label="Luv for tech">
+        <h2>Luv for tech</h2>
+        <p>My love for tech comes from always being in front of a screen (maybe that’s why my eyesight is so bad). I love how ping works in video games, and I’m always the one trying to fix the Wi-Fi when it goes down.</p>
+        <label for="ab-0" class="popup-close">Close</label>
+      </article>
+      <article class="popup popup-4" aria-label="Family">
+        <h2>Family</h2>
+        <p>I began playing video games with my dad when I was quite little. My fascination in technology began with those games, which I later played with my brother and friends.</p>
+        <label for="ab-0" class="popup-close">Close</label>
+      </article>
+      <article class="popup popup-5" aria-label="Gaming">
+        <h2>Gaming</h2>
+        <p>I’ve been gaming from a young age, starting with racing games with my dad. Later I played them with my friends and my brother, and those games are where a lot of my interest in tech started..</p>
+        <label for="ab-0" class="popup-close">Close</label>
+      </article>
+      <article class="popup popup-6" aria-label="Goals">
+        <h2>My goals</h2>
+        <p>I want to become a police officer and join the cybercrime unit, or work as a digital forensic investigator alongside the police. My goal is to help solve cybercrime and protect people from it.</p>
+        <label for="ab-0" class="popup-close">Close</label>
+      </article>
+    </div>
+  </div>
+</section>
+
+    <!-- Intro video: 45-60 seconds, controls + poster required -->
+    <section class="about-video wrapper" aria-labelledby="video-title">
+      <h2 id="video-title">Meet Me in 60 Seconds</h2>
+      <video controls poster="images/video-poster.jpg" preload="metadata">
+        <source src="images/intro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- Timeline: same markup as index.html -->
+    <section class="timeline" aria-labelledby="timeline-title">
+      <div class="wrapper">
+        <h2 id="timeline-title">My Timeline of Experience</h2>
+        <p class="timeline-intro">Where I started, what I am doing now, and where I want to go.</p>
+
+        <div class="slider">
+          <!-- No "checked" on any radio, so every bio starts hidden -->
+          <input type="radio" name="timeline" id="tl-1">
+          <input type="radio" name="timeline" id="tl-2">
+          <input type="radio" name="timeline" id="tl-3">
+
+          <div class="slider-nav">
+            <label for="tl-1" class="stage stage-past marker-up">
+              <span class="chev-wrap"><span class="chevron"><span class="chev-text">Past</span></span></span>
+              <span class="stem" aria-hidden="true"></span>
+              <span class="dot" aria-hidden="true"></span>
+            </label>
+            <label for="tl-2" class="stage stage-present marker-down">
+              <span class="chev-wrap"><span class="chevron"><span class="chev-text">Present</span></span></span>
+              <span class="stem" aria-hidden="true"></span>
+              <span class="dot" aria-hidden="true"></span>
+            </label>
+            <label for="tl-3" class="stage stage-future marker-up">
+              <span class="chev-wrap"><span class="chevron"><span class="chev-text">Future</span></span></span>
+              <span class="stem" aria-hidden="true"></span>
+              <span class="dot dot-clock" aria-hidden="true"></span>
+            </label>
+          </div>
+
+          <p class="slider-hint">Click Past, Present or Future to read about each stage.</p>
+
+          <div class="slider-window">
+            <ol class="slider-track">
+
+              <li class="slide">
+                <div class="slide-grid">
+                  <article class="timeline-card">
+                    <p class="timeline-label">Past</p>
+                    <h3>Where it started</h3>
+                    <p>My interest in technology began at school, where I became the person teachers and classmates came to when something stopped working. I helped troubleshoot [computers, printers, projectors, Wi-Fi] and learned to track a problem down step by step instead of guessing.</p>
+                    <p>Robotics class showed me how hardware, software and teamwork fit together. Building and testing [describe a robot or project] taught me patience, because the first attempt rarely worked and fixing it was where the learning happened.</p>
+                  </article>
+                  <section class="timeline-card skills-card" aria-label="Skills learned in the past">
+                    <p class="timeline-label">Skills</p>
+                    <h3>Skills I learned</h3>
+                    <ul>
+                      <li>Troubleshooting school technology</li>
+                      <li>Robotics class and hands-on building</li>
+                      <li>Explaining technical problems in plain language</li>
+                    </ul>
+                  </section>
+                </div>
+              </li>
+
+              <li class="slide">
+                <div class="slide-grid">
+                  <article class="timeline-card">
+                    <p class="timeline-label">Present</p>
+                    <h3>Learning by doing</h3>
+                    <p>Today I am building real skills in networking and IT security. In my labs I work on [subnetting, routing and switching, firewalls, secure configurations] and I treat each lab as practice for how I would protect a real system.</p>
+                    <p>I also apply what I learn outside the classroom. I help local businesses build websites, using AI tools to speed up drafting and to try ideas, and then I review and fix the code myself so I understand every part of it. Working with real clients has taught me to listen first and to deliver something simple that works.</p>
+                  </article>
+                  <section class="timeline-card skills-card" aria-label="Skills I am learning now">
+                    <p class="timeline-label">Skills</p>
+                    <h3>Skills I am learning</h3>
+                    <ul>
+                      <li>Networking and IT security labs and projects</li>
+                      <li>Building websites for local businesses</li>
+                      <li>Using AI tools responsibly and checking the results</li>
+                    </ul>
+                  </section>
+                </div>
+              </li>
+
+              <li class="slide">
+                <div class="slide-grid">
+                  <article class="timeline-card">
+                    <p class="timeline-label">Future</p>
+                    <h3>Fighting cybercrime</h3>
+                    <p>Cybercrime is growing, and the people harmed by it are often ordinary families and small businesses. I want to build my career in digital forensics: collecting and examining digital evidence so investigators can understand what happened and hold the right people accountable.</p>
+                    <p>My goal is to gain experience working with police and to contribute to real investigations. To get there, I plan to keep building my networking and security skills, learn forensic tools and methods, and look for [co-op placements, certifications, or volunteer opportunities].</p>
+                  </article>
+                  <section class="timeline-card skills-card" aria-label="Skills I want to gain">
+                    <p class="timeline-label">Skills</p>
+                    <h3>Skills I want to gain</h3>
+                    <ul>
+                      <li>Gain hands-on digital forensics experience</li>
+                      <li>Work with police on cybercrime cases</li>
+                      <li>Keep learning through [certifications or co-op]</li>
+                    </ul>
+                  </section>
+                </div>
+              </li>
+
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Contact: <a href="mailto:isaiah.olokude@gmail.com">isaiah.olokude@gmail.com</a></p>
+    <p>&copy; 2026 Isaiah Olokude</p>
+  </footer>
+
+</body>
+</html>

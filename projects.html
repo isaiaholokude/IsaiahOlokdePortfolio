@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Your Name</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px) and (max-width: 1023px)">
+  <link rel="stylesheet" href="css/laptop.css" media="screen and (min-width: 1024px)">
+</head>
+<body class="page-projects">
+
+  <header class="site-header">
+    <div class="wrapper clearfix">
+      <a href="index.html" class="logo" aria-label="Home">YN</a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" class="current">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="projects wrapper" aria-labelledby="projects-title">
+      <h1 id="projects-title">My Projects</h1>
+      <p class="projects-intro">Labs, assignments and real work I have done so far. Each one taught me something I use in the next.</p>
+
+      <!-- Cards are inline-blocks with % widths; tablet.css and laptop.css change how many fit per row -->
+      <div class="project-grid">
+
+        <article class="project-card">
+          <p class="project-tag">Networking</p>
+          <h2>Networking Labs</h2>
+          <p>Subnetting, routing and switching labs where I design and configure small networks from scratch. I then test that every device can reach the others and fix whatever breaks. I used Packet Tracer , Wireshark.</p>
+        </article>
+
+        <article class="project-card">
+          <p class="project-tag">Security</p>
+          <h2>IT Security Labs</h2>
+          <p>Hands-on labs about how systems get attacked and how to defend them, including secure configuration, vulnerability scanning. Each lab ends with how I found and how I fixed it.</p>
+        </article>
+
+        <article class="project-card">
+          <p class="project-tag">Web design</p>
+          <h2>Local Business Websites</h2>
+          <p>I build websites for local businesses with HTML and CSS, using AI tools to speed up drafting. I then review and fix the code myself and test each page on a phone, tablet and laptop.</p>
+        </article>
+
+        <article class="project-card">
+          <p class="project-tag">Robotics</p>
+          <h2>Robotics Class Project</h2>
+          <p>With my team, I built and tested [describe your robot]. We combined hardware, code and teamwork, and the first attempt rarely worked, so most of the learning came from troubleshooting.</p>
+        </article>
+
+        <article class="project-card">
+          <p class="project-tag">IT support</p>
+          <h2>School Tech Support</h2>
+          <p>I helped my school fix technical problems withcomputers, printers, projectors, Wi-Fi. I learned to find the cause step by step and to explain the fix in plain language.</p>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Contact: <a href="mailto:you@example.com">you@example.com</a></p>
+    <p>&copy; 2026 Your Name</p>
+  </footer>
+
+</body>
+</html>
