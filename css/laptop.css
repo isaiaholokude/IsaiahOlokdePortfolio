@@ -1,5 +1,23 @@
-/* laptop.css: 1024px and wider.
-   Full spacing between nav links and a roomy hero. */
+/* laptop.css
+   Loads at 1024px and wider (small laptops up to large desktops).
+   Full spacing and three columns where it makes sense. */
+
+/* ---------- Header and nav ---------- */
 .site-header nav a { padding: 0.75rem 1.6rem; }
+
+/* ---------- Home hero ---------- */
 .hero { padding: 5rem 0; }
 .hero-text { padding-top: 4rem; }
+
+/* ---------- Timeline ---------- */
+.timeline-card { padding: 1.5rem; }
+
+/* ---------- About page ---------- */
+/* Poster left (50%), video right (46%), set in base.css */
+
+/* ---------- Projects ---------- */
+/* Three cards per row: 31.3333% + 1% margin each side = 33.3333% */
+.project-card { width: 31.3333%; margin: 0 1% 2%; }
+
+/* ---------- Contact ---------- */
+.contact-form { max-width: 640px; }

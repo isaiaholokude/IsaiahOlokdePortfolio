@@ -1,0 +1,61 @@
+/* mobile.css
+   Loads below 768px (phones, roughly 320px to 767px).
+   Everything stacks into one column. No Flexbox, only floats reset
+   to "none", block display and percentage widths. */
+
+/* ---------- Header and nav ---------- */
+.logo { float: none; display: block; margin: 0 auto 0.5rem; }  /* logo centred above the links */
+.site-header nav { float: none; text-align: center; }
+.site-header nav a { padding: 0.5rem 0.6rem; font-size: 0.75rem; }
+
+/* ---------- Home hero ---------- */
+.hero { padding: 2rem 0; }
+.hero-text,
+.hero-image { float: none; width: 100%; }
+.hero-text { padding-top: 0; text-align: center; }
+.hero-image { width: 70%; padding-bottom: 70%; margin: 2rem auto 0; } /* photo blob under the text */
+
+/* ---------- Timeline ---------- */
+/* Smaller arrows, stems and circles (these are variables set in base.css) */
+.slider-nav { --chev-h: 2.75rem; --stem: 1.25rem; --clock: 2.8rem; --dot: 1.5rem; }
+.chev-text { font-size: 0.8rem; }
+
+/* Bio box and skills box stack, bio first */
+.timeline .slide-grid .timeline-card,
+.timeline .slide-grid .skills-card {
+  float: none;
+  width: 100%;
+  margin: 0 0 1rem;
+}
+
+/* ---------- About page ---------- */
+/* Poster first, video underneath */
+.about-layout .about,
+.about-layout .about-video { float: none; width: 100%; }
+.about-layout .about-video { margin-top: 1.5rem; }
+
+/* Bigger popup with smaller text so it fits the small poster */
+.popup { width: 90%; max-height: 70%; padding: 0.75rem; }
+.popup h2 { font-size: 1rem; }
+.popup p { font-size: 0.8rem; }
+.note { width: 27%; }
+
+/* ---------- Projects ---------- */
+/* Nothing needed: cards are 100% wide by default in base.css, so one per row. */
+
+/* ---------- Contact ---------- */
+.contact-form { padding: 1rem; }
+.contact-form button { width: 100%; }
+
+.hero-text h1 {
+  font-size: 2rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.hero-text a {
+  font-size: 1rem;
+}

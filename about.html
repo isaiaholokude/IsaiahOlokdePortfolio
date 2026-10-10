@@ -3,18 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me | Your Name</title>
+  <title>About Me | Isaiah Olokude</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&amp;family=Playfair+Display:ital,wght@1,700&amp;family=Poppins:wght@300;400;500&amp;display=swap">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
-  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px) and (max-width: 1023px)">
-  <link rel="stylesheet" href="css/laptop.css" media="screen and (min-width: 1024px)">
+  <!-- phone style sheet -->
+<link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 480px)">
+<!-- tablet style sheet -->
+<link rel="stylesheet" href="css/tablet.css" media="only screen and (min-width: 481px) and (max-width: 960px)">
+<!-- full-size monitor style sheet -->
+<link rel="stylesheet" href="css/laptop.css" media="only screen and (min-width: 960px)">
 </head>
 <body>
 
   <header class="site-header">
     <div class="wrapper clearfix">
-      <a href="index.html" class="logo" aria-label="Home">YN</a>
+      <a href="index.html" class="logo" aria-label="Home"><img src="images/hero.png" alt="Your Portrait"></a>
       <nav aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -76,12 +79,12 @@
       </article>
       <article class="popup popup-4" aria-label="Family">
         <h2>Family</h2>
-        <p>I began playing video games with my dad when I was quite little. My fascination in technology began with those games, which I later played with my brother and friends.</p>
+        <p>I grew up in Brampton as the oldest of three, with a Canadian mom and a Nigerian dad. Growing up, I made a lot of friends and loved playing sports.</p>
         <label for="ab-0" class="popup-close">Close</label>
       </article>
       <article class="popup popup-5" aria-label="Gaming">
         <h2>Gaming</h2>
-        <p>I’ve been gaming from a young age, starting with racing games with my dad. Later I played them with my friends and my brother, and those games are where a lot of my interest in tech started..</p>
+        <p>I began playing video games with my dad when I was quite little. My fascination in technology began with those games, which I later played with my brother and friends.</p>
         <label for="ab-0" class="popup-close">Close</label>
       </article>
       <article class="popup popup-6" aria-label="Goals">
@@ -94,13 +97,15 @@
 </section>
 
     <!-- Intro video: 45-60 seconds, controls + poster required -->
-    <section class="about-video wrapper" aria-labelledby="video-title">
-      <h2 id="video-title">Meet Me in 60 Seconds</h2>
-      <video controls poster="images/video-poster.jpg" preload="metadata">
-        <source src="images/intro.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </section>
+    <section class="about-video" aria-labelledby="video-title">
+  <h2 id="video-title">Meet Me in 60 Seconds</h2>
+
+  <!-- controls shows play/pause/volume; poster is the image shown before playing -->
+  <video controls poster="images/poster.jpeg" preload="metadata">
+    <source src="videos/intro.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</section>
 
     <!-- Timeline: same markup as index.html -->
     <section class="timeline" aria-labelledby="timeline-title">
@@ -205,7 +210,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>Contact: <a href="mailto:isaiah.olokude@gmail.com">isaiah.olokude@gmail.com</a></p>
+    <p>Contact: <a href="mailto:isaiah.olokude@ontariotechu.net">isaiah.olokude@ontariotechu.net</a></p>
     <p>&copy; 2026 Isaiah Olokude</p>
   </footer>
 

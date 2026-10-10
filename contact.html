@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me | Isaiah Olokude</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&amp;display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- phone style sheet -->
+<link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 480px)">
+<!-- tablet style sheet -->
+<link rel="stylesheet" href="css/tablet.css" media="only screen and (min-width: 481px) and (max-width: 960px)">
+<!-- full-size monitor style sheet -->
+<link rel="stylesheet" href="css/laptop.css" media="only screen and (min-width: 960px)">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrapper clearfix">
+      <a href="index.html" class="logo" aria-label="Home"><img src="images/hero.png" alt=""></a>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" class="current">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact wrapper" aria-labelledby="contact-title">
+      <h1 id="contact-title">Contact Me</h1>
+      <p class="contact-intro">Send me your questions, comments and project related queries.</p>
+
+      <!-- The browser checks every rule below before it lets the form submit -->
+      <form class="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain">
+
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Smith"
+               required minlength="2" maxlength="60" autocomplete="name">
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" placeholder="jane@example.com"
+               required autocomplete="email">
+
+        <label for="phone">Cell No.</label>
+        <!-- pattern: 10 digits, optional hyphens, e.g. 905-555-1234 -->
+        <input type="tel" id="phone" name="phone" placeholder="905-555-1234"
+               required pattern="[0-9]{3}-?[0-9]{3}-?[0-9]{4}"
+               title="Enter a 10-digit number, like 905-555-1234" autocomplete="tel">
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" placeholder="Question, comment or query..."
+                  required minlength="10" maxlength="500"></textarea>
+
+        <label for="robot">What is 1+1? (So I know you aren't a robot)</label>
+        <input type="text" id="robot" name="robot" inputmode="numeric" placeholder="Your answer"
+               required pattern="2" title="Type the number 2" autocomplete="off">
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Contact: <a href="mailto:isaiah.olokude@onntariotechu.net">isaiah.olokude@onntariotechu.net</a></p>
+    <p>&copy; 2026 Isaiah Olokude</p>
+  </footer>
+
+</body>
+</html>

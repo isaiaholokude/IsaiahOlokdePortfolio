@@ -3,19 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
+  <title>Home | Isaiah Olokude</title>
   <!-- Poppins font from Google Fonts (cite this in your README) -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&amp;display=swap">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
-  <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 768px) and (max-width: 1023px)">
+  <!-- phone style sheet -->
+<link rel="stylesheet" href="css/mobile.css" media="only screen and (max-width: 480px)">
+<!-- tablet style sheet -->
+<link rel="stylesheet" href="css/tablet.css" media="only screen and (min-width: 481px) and (max-width: 960px)">
+<!-- full-size monitor style sheet -->
+<link rel="stylesheet" href="css/laptop.css" media="only screen and (min-width: 960px)">
 </head>
 <body>
 
   <header class="site-header">
     <div class="wrapper clearfix">
       <!-- Logo badge made with CSS: your initials, no image needed -->
-      <a href="index.html" class="logo" aria-label="Home"></a>
+     <a href="index.html" class="logo" aria-label="Home"><img src="images/hero.png" alt=""></a>
       
       <nav aria-label="Main navigation">
         <ul>
@@ -39,7 +43,7 @@
         <a href="about.html" class="learn-more-here">Learn more about me here &rarr;</a>
       </article>
       <div class="hero-image">
-        <img src="images/hero.PNG" alt="Your Name at a desks">
+        <img src="images/hero.PNG" alt="Your Portrait" class="hero-portrait">
       </div>
     </section>
    <section class="timeline" aria-labelledby="timeline-title">

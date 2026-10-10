@@ -57,6 +57,15 @@ img, video { max-width: 100%; height: auto; } /* fluid media */
   background: linear-gradient(135deg, var(--color-dark), var(--color-mid));
 }
 
+.logo { padding: 3px; }
+.logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;          /* crops instead of stretching */
+  object-position: 50% 20%;
+}
 .site-header nav { float: right; }
 .site-header ul { margin: 0; padding: 0; list-style: none; }
 .site-header li { display: inline-block; }   /* inline-block instead of flex */
@@ -67,7 +76,7 @@ img, video { max-width: 100%; height: auto; } /* fluid media */
   font-weight: 500;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--color-);
+  color: var(--color-text);
   text-decoration: none;
 }
 .site-header nav a:hover,
@@ -82,7 +91,7 @@ img, video { max-width: 100%; height: auto; } /* fluid media */
   font-weight: 400;
   color: var(--color-dark);
 }
-.hero-text p { font-size: clamp(1rem, 1.8vw, 10rem); }
+.hero-text p { font-size: clamp(0.5rem, 1.8vw, 1.2rem); }
 .learn-more-here {
   display: inline-block;
   margin-top: 1rem;
@@ -115,7 +124,7 @@ img, video { max-width: 100%; height: auto; } /* fluid media */
 /* ---------- Footer ---------- */
 .site-footer {
   clear: both;
-  padding: 1.5rem 1rem;
+  padding: 4rem 1rem;
   text-align: center;
   color: #fff;
   background: var(--color-dark);
@@ -490,9 +499,9 @@ img, video { max-width: 100%; height: auto; } /* fluid media */
 }
 
 /* Video section below the poster */
-.about-video { padding: 1rem 0 3rem; text-align: center; }
+.about-video { padding: 1rem 0 1rem; text-align: center; }
 .about-video h2 { color: var(--color-dark); }
-.about-video video { display: block; width: 100%; max-width: 720px; margin: 0 auto; }
+.about-video video { display: block; width: 100%; max-width: 350px; margin: 0 auto; }
 
 .page-projects { background: var(--color-soft); }
 
@@ -539,6 +548,79 @@ img, video { max-width: 100%; height: auto; } /* fluid media */
   background: var(--color-light);
   border-radius: 999px;
 }
+
+.contact { padding: 3rem 0; }
+.contact h1 { margin: 0 0 0.5rem; color: #fff; }
+.contact h1::after {                       /* linear gradient underline */
+  content: "";
+  display: block;
+  width: 90px;
+  height: 4px;
+  margin-top: 0.75rem;
+  background: linear-gradient(to right, var(--color-accent), var(--color-light));
+}
+.contact-intro { margin: 0 0 1.5rem; color: #fff; }
+
+/* Form card: fluid width, capped on big screens, centred */
+.contact-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  background: #fff;
+  border-top: 4px solid var(--color-accent);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.contact-form label {
+  display: block;
+  margin: 1rem 0 0.35rem;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+.contact-form label:first-child { margin-top: 0; }
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.65rem 0.75rem;
+  font: inherit;
+  color: var(--color-text);
+  background: var(--color-light);
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+.contact-form textarea { resize: vertical; }
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--color-mid);
+}
+
+/* Show a red-orange border only after the visitor has typed something invalid */
+.contact-form input:invalid:not(:placeholder-shown),
+.contact-form textarea:invalid:not(:placeholder-shown) {
+  border-color: var(--color-accent);
+}
+
+.contact-form button {
+  display: block;
+  width: 70%;
+  margin: 1.5rem auto 0;
+  padding: 0.75rem;
+  font: inherit;
+  font-weight: 500;
+  color: var(--color-text);
+  background: var(--color-accent);
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.contact-form button:hover { background: var(--color-mid); color: #fff; }
+.contact-form button:focus-visible { outline: 3px solid var(--color-dark); outline-offset: 2px; }
 
 
 
