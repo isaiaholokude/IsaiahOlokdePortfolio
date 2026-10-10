@@ -336,7 +336,7 @@ img, video { max-width: 100%; height: auto; } /* fluid media */
   max-width: 620px;
   margin: 0 auto;
   overflow: hidden;
-  background: #0088f0;;
+  background: #fff;;
   border: 1px solid #cfd8e3;
 }
 .poster::before { content: ""; display: block; padding-bottom: 120%; }
